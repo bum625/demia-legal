@@ -43,8 +43,17 @@
       <h2>3. 문의</h2>
       <p>서비스 이용 관련 문의는 아래 이메일로 연락해 주세요: <a href="mailto:demia-support@lkinv.com">demia-support@lkinv.com</a></p>
 
-      <div class="meta">© 2025 (주)엘케이인벤션</div>
+      <div class="meta">© <span id="year"></span> 주식회사 엘케이인벤션</div>
     </div>
   </div>
+
+    <script>
+        // 현재 날짜 객체 생성
+        const currentYear = new Date().getFullYear();
+        
+        // id가 'year'인 요소에 현재 연도 삽입
+        document.getElementById('year').textContent = currentYear;
+    </script>
+
 </body>
 </html>
